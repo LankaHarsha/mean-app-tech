@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --watch",
     "postinstall": "typings install",
-    "start": "node server.js"
+    "start": "node server.js && npm run build"
   },
   "engines": {
     "node": ">=4.4.0",
