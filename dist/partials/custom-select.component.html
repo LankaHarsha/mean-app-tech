@@ -1,0 +1,8 @@
+<div class="container">
+	<div class="custom-select">
+		<select (change)="onCustomChange($event.target.value)" class="form-control" name="">
+			<option value="" selected>Select {{label}} Name</option>
+			<option *ngFor="let item of data" [value]="item | json">{{item.name}}</option>
+		</select>
+	</div>
+</div>

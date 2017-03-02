@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --watch",
     "postinstall": "typings install",
-    "start": "node server.js && webpack --progress --watch"
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=4.4.0",
@@ -32,8 +32,7 @@
     "reflect-metadata": "latest",
     "rxjs": "5.0.0-beta.12",
     "zone.js": "0.6.23",
-    "typings": "^2.1.0",
-    "webpack": "^1.14.0"
+    "typings": "^2.1.0"
   },
   "author": "",
   "license": "ISC",
