@@ -15,7 +15,13 @@ class Server {
     mongoConnect() {
 
         let env = this.app.get('env');
-        let mongoUrl = 'mongodb://localhost:27017/Assignment';
+        let mongoUrl;
+
+        if(process.env.NODE_ENV === 'production') {
+            mongoUrl = 'mongodb://139.59.63.14:27017/Assignment';
+        } else {
+            mongoUrl = 'mongodb://localhost:27017/Assignment';            
+        }
 
         mongoose.connect(mongoUrl).then(function(conn) {
 
